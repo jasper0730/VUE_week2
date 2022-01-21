@@ -15,7 +15,8 @@ const app = Vue.createApp({
                 this.getData();
             })
             .catch((err)=>{
-                console.log(err.data.message)
+                alert(err.data.message)
+                window.location = 'index.html';
             })
         },
         getData() {
